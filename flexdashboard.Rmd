@@ -26,10 +26,14 @@ ny_noaa =
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A
+### Snowfall in mm of data from 8 weather stations
 
 ```{r}
-
+ny_noaa %>%
+  mutate(text_label = str_c("Snowfall in mm is", snow)) %>% 
+  plot_ly(
+    x = ~date, y = ~snow, type = "scatter", mode = "markers",
+    color = ~id, text = ~text_label, alpha = 0.5)
 ```
 
 Column {data-width=350}
