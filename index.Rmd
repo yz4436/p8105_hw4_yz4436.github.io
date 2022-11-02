@@ -1,6 +1,17 @@
 ---
 title: "Homework 4 - personal website"
-author: "Yuanhao Zhang"
-date: "2022-11-02"
-output: html_document
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
 ---
+
+### Introductory
+
+This is the personal website of Yuanhao Zhang. I am a first year graduate student in Columbia University and major in Biostatistics with concentration in public health data science. 
+
+
+
+
+
