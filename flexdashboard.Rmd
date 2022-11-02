@@ -1,5 +1,5 @@
 ---
-title: "flexdashboard"
+title: "NY Noaa dashboard"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -13,6 +13,15 @@ library(p8105.datasets)
 library(plotly)
 ```
 
+
+```{r}
+data("ny_noaa")
+ny_noaa = 
+  ny_noaa %>%
+  filter(id %in% c("USC00300023","USC00300028", "USC00300055", "USC00300063", 
+                   "USC00300093", "USC00300085", "USC00300183", "USC00300220")) %>% 
+  drop_na()
+```
 
 Column {data-width=650}
 -----------------------------------------------------------------------
