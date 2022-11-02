@@ -39,10 +39,11 @@ ny_noaa %>%
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
+### Minimum temperature (tenths of degrees C) for select weather stations
 
 ```{r}
-
+ny_noaa %>% 
+  plot_ly(x = ~id, y = ~tmin, color = ~id, type = "box", colors = "viridis")
 ```
 
 ### Chart C
