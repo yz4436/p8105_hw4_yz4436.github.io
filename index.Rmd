@@ -14,9 +14,9 @@ This is the personal website of Yuanhao Zhang. I am a first year graduate studen
 
 ### Experience
 
-This is the page that have my academic and professional experience. Here is the link:[My experience](about.html)
+This is the page that has my academic and professional experience. Here is the link:[My experience](about.html)
 
-### Problem 2
+### Dashboard of data from NY NOAA
 
 Flexdashboard with 3 distinct plots about dataset ny_noaa : [flexdashboard](flexdashboard.html)
 

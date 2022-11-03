@@ -39,16 +39,19 @@ ny_noaa %>%
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Minimum temperature (tenths of degrees C) for select weather stations
+### Minimum temperature (tenths of degrees C) for 8 weather stations
 
 ```{r}
 ny_noaa %>% 
   plot_ly(x = ~id, y = ~tmin, color = ~id, type = "box", colors = "viridis")
 ```
 
-### Chart C
+### Number of effective data rows by 8 weather stations
 
 ```{r}
-
+ny_noaa %>%
+  count(id) %>% 
+  mutate(id = fct_reorder(id, n)) %>%
+  plot_ly(x = ~id, y = ~n, color = ~id, type = "bar", colors = "viridis")
 ```
 
